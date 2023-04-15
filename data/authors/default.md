@@ -4,8 +4,7 @@ avatar: /static/images/avatar.png
 occupation: Web Application Developer
 company: Forwardslash Development
 email: jerry.vrabel.development@gmail.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
+linkedin: https://www.linkedin.com/in/forwardslash-development/
 github: https://github.com/jerry-vrabel-development/
 ---
 
