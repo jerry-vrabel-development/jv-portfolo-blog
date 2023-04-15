@@ -11,10 +11,10 @@ const siteMetadata = {
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'jerry.vrabel.development@gmail.com',
-  github: 'https://github.com',
+  github: 'https://github.com/jerry-vrabel-development',
   twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
+  youtube: 'https://www.youtube.com/channel/UCHW2X96v8EOfQ72NPfSXnNA',
   linkedin: 'https://www.linkedin.com',
   locale: 'en-US',
   analytics: {
