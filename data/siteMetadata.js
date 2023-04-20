@@ -5,7 +5,7 @@ const siteMetadata = {
   description: 'A development blog',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
+  siteUrl: 'https://jerry-vrabel-development.vercel.app/',
   siteRepo: 'https://github.com/jerry-vrabel-development/jv-portfolo-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
