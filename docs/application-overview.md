@@ -1,4 +1,4 @@
-# Tailwind Nextjs MDX Blog
+# Nextjs Tailwind MDX Blog
 
 This is a [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/) Easily configurable and customizable. Perfect as a replacement to existing Jekyll and Hugo individual blogs. Adapted from [Tailwindlabs blog](https://github.com/tailwindlabs/blog.tailwindcss.com).
 
