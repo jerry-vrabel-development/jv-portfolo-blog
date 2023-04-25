@@ -1,0 +1,78 @@
+---
+title: Chat GPT Input
+date: '2023-04-24'
+tags: ['AI', 'Chat GPT', 'React']
+draft: false
+summary: AI code from the input "code a react image gallery"
+images: []
+layout: PostLayout
+canonicalUrl:
+---
+
+Sure! Here's a basic example of a React image gallery:
+
+```javascript
+import React, { useState } from 'react'
+import './ImageGallery.css'
+
+const ImageGallery = ({ images }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+  const handleImageClick = (index) => {
+    setCurrentImageIndex(index)
+  }
+
+  return (
+    <div className="image-gallery">
+      <img
+        className="current-image"
+        src={images[currentImageIndex]}
+        alt={`Image ${currentImageIndex + 1}`}
+      />
+      <div className="thumbnail-container">
+        {images.map((image, index) => (
+          <img
+            key={index}
+            className={`thumbnail ${currentImageIndex === index ? 'active' : ''}`}
+            src={image}
+            alt={`Image ${index + 1}`}
+            onClick={() => handleImageClick(index)}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default ImageGallery
+```
+
+Here's how to use it in your main App.js file:
+
+```javascript
+import React from 'react'
+import ImageGallery from './ImageGallery'
+import './App.css'
+
+const App = () => {
+  const images = [
+    'https://source.unsplash.com/400x400/?nature,water',
+    'https://source.unsplash.com/400x400/?nature,forest',
+    'https://source.unsplash.com/400x400/?nature,animals',
+    'https://source.unsplash.com/400x400/?nature,mountain',
+  ]
+
+  return (
+    <div className="App">
+      <h1>React Image Gallery</h1>
+      <ImageGallery images={images} />
+    </div>
+  )
+}
+
+export default App
+```
+
+In this example, we pass an array of image URLs to the ImageGallery component as a prop. The current image index is stored in state using the useState hook, and updated whenever a thumbnail is clicked. The handleImageClick function is called with the index of the clicked thumbnail, and sets the state with that index. The map function is used to render each thumbnail image, and a class of "active" is applied to the currently selected thumbnail using a ternary operator.
+
+Note that the styles for the image gallery are stored in a separate CSS file (ImageGallery.css), which should be imported into your main App.js file.
