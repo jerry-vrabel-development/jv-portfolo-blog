@@ -38,7 +38,7 @@ const Card = ({ title, description, imgSrc, href }) => (
             title
           )}
         </h2>
-        <p className="prose mb-3 max-w-none text-orange-500 dark:text-orange-400">{description}</p>
+        <p className="prose mb-3 max-w-none text-orange-500 dark:text-orange-300">{description}</p>
         {href && (
           <Link
             href={href}

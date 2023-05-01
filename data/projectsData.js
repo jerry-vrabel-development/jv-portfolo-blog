@@ -8,9 +8,7 @@ const projectsData = [
   },
   {
     title: 'Other experiences',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
+    description: `Leading the development of complex web applications, from design to deployment. I collaborate with teams of developers, designers, and stakeholders to implement features using the latest web technologies and best practices.`,
     imgSrc: '/static/images/other.png',
     href: '/blog/the-time-machine',
   },
