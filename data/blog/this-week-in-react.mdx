@@ -1,0 +1,123 @@
+---
+title: This week in React
+date: '2023-05-10'
+tags: [React]
+draft: true
+summary:
+images: []
+layout: PostLayout
+canonicalUrl:
+---
+
+## ⚛️ React
+
+### [Next.js 13.4](https://nextjs.org/blog/next-13-4)
+
+##### A major release for Next.js, with:
+
+- App Router (stable): the new router based on Suspense and Server Components is ready for production.
+- Turbopack (beta): the new bundler is stabilizing in dev, and prod build is coming soon.
+- Server Actions (alpha): Next.js integration of the latest React innovations.
+  The blog post shows many notable differences with the old router: conventions, nested layouts, selective hydration, server components, code splitting...
+
+It also unveils the new React innovations to manage mutations and form submissions, whose integration in Next.js gives birth to Server Actions. This greatly simplifies interactions with the server without the need to create an API route and the use of forms supporting progressive enhancement. It is now possible to create and distribute full-stack React components.
+
+Note that it is a bit early to adopt Server Actions in production. They are in alpha, and you could unexpectedly expose a secret captured in a Server Action closure to the client. Details here:
+
+##### 🧵 [Thread](https://twitter.com/tomus_sherman/status/1654198731313500174) warns of this issue
+
+##### 🎥 [Next's Server Actions Might Not Be That Safe...](https://www.youtube.com/watch?v=fdKcbyEK66M)
+
+📖 New [Next.js documentation:](https://nextjs.org/docs) the new beta doc is deployed in production. I advise in particular to read React Essentials.
+
+👀 [useOptimistic](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions#experimental-useoptimistic) and [useFormStatus](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions#experimental-useformstatus): new React experimental hooks.
+
+📜 [Next.js 13.4 on Vercel](https://vercel.com/changelog/next-js-13-4)
+
+📜 [Introducing the Vercel Data Cache](https://vercel.com/changelog/introducing-vercel-data-cache): Optimized caching for React Server Components
+
+🎥 [Introducing Next.js App Router](https://www.youtube.com/watch?v=DrxiNfbr63s)
+
+🧑‍🎓 [TotalTypeScript - React with TypeScript tutorial](https://www.totaltypescript.com/tutorials/react-with-typescript): free tutorial by Matt Pocock, the TypeScript wizard.
+
+🎨 [The Rendering Journey of a React component]: step-by-step visualization of re-rendering.
+
+📜 React Canaries: Enabling Incremental Feature Rollout Outside Meta: the React team presenting a new canary release channel which allows frameworks to adopt new React features before their official stable release. The canary releases are stable enough to be adopted in production. This is what Next.js App Router uses now, but also what Meta and React-Native always relied on.
+
+📜 React Server Components, Next.js App Router and examples: Addy Osmani shares his notes and reflections on Server Components. A good overview, as well as many examples of open-source apps. Also lists reasons to stop using Create-React-App.
+
+📜 5 Lessons Learned From Taking Next.js App Router to Production: feedback from Inngest who successfully migrated a CRA app to Next.js and App Router. There are some interesting details about caching or search parameters.
+
+📜 Server-side rendering React in OCaml: Ahrefs devs use Reason-React. They reimplemented ReactDOMServer.renderToString in OCaml to be able to run the SSR natively and solve some of their issues. Their SSR is now 10x faster than Node.js and 6x faster than Bun. The idea of running SSR natively is very interesting, but it will take a lot of work to support the latest innovations like streaming and Server Components.
+
+📜 HTMX is the Future: a critique of SPA frameworks, in particular React. Proposes to use an alternative: HTMX and hypermedia responses. I find it interesting for backend devs who want to add interactivity without doing JavaScript, but not sure that it scales that well.
+
+📜 Context, Composition, and Flexibility: proposes to use the React context to activate an alternative rendering of a component on a whole subtree.
+
+📜 My Struggle With Remix: interesting feedback. The author still loves Remix, but presents some challenges encountered while using it.
+
+📜 Pull to refresh from scratch as a React hook
+
+📜 Creating an interactive spotlight border with CSS and React
+
+📦 Redwood 5.0: React 18, TypeScript v5 and observability.
+
+📦 Ink UI - Themable UI components for your next CLI: great example of the React cross-platform abilities. It's possible to render to the terminal, and even create UI libs for that particular ecosystem.
+
+📦 OpenNext 1.2.0 - geolocation in middleware
+
+📦 Zact - Zod Server ACTions
+
+📦 Astro 2.4
+
+📦 server-only: official React package to prevent the import of server code into Client Components (see Next.js docs).
+
+📦 shadcn UI - Table and Data Table components
+
+📦 Million.js 2.3.1 - Astro support (beta)
+
+📊 State of React 2023 - Preliminary Discussions: there might be a survey dedicated to React this year.
+
+👀 RSCs on Rspack
+
+👀 Edit audio with Remotion
+
+🎥 Always Bet On React
+
+🎥 I'm Done With React
+
+🎥 Should You Learn React in 2023? - Interview with React Summit Speakers Tru Narla and Jordan Gensler
+
+---
+
+### 📱 React-Native
+
+📖 New Reanimated Beta docs: new interactive Docusaurus doc with many examples implemented in React-Native-Web.
+
+🎨 VisionCamera + Skia + TensorFlow demo: it's impressive what can be done in React-Native today. Skia rendering and TensorFlow models can be updated with an Over-The-Air update.
+
+🎨 Reanimated 3 + Expo Router + Shared Element Transitions demo
+
+📜 Best tips & tricks for E2E Maestro with React Native
+
+📜 React Native run-android: How to Test Various Device Types
+
+---
+
+## 🔀 Other
+
+Client-side rendering of HTML and interactivity
+
+Diagnose slow interactions in the lab
+
+I want to talk about WebGPU
+
+Animate elements on scroll with Scroll-driven animations
+
+Cumulative Layout Shift Differences In Lab And Field Data
+
+Angular v16
+
+Nx v16
+
+Vitest 0.31
