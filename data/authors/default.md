@@ -17,4 +17,4 @@ github: https://github.com/jerry-vrabel-development/
 - 💬 Ask me about... Really anything. I'll give you my hot take on it.
 - 📫 How to reach me: `jerry.vrabel.development@gmail.com`
 - 😄 Pronouns: he/him
-- ⚡ Fun fact: I am a former USAF military working dog handler, former ThoughtWorker, still left-handed and colorblind.
+- ⚡ Fun fact: When people talk about talent, what they’re really talking about is dedication, commitment to practice, and a willingness to fail; repeatedly.
