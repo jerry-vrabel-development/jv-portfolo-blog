@@ -1,6 +1,10 @@
 # Title
 
+JERRY-VRABEL-DEVELOPMENT
+
 ## Introduction
+
+A next.js mdx project.
 
 ## Table Of Contents:
 
