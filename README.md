@@ -6,7 +6,7 @@ JERRY-VRABEL-DEVELOPMENT
 
 A next.js mdx project.
 
-## Table Of Contents:
+## Table Of Contents
 
 - [💻 Application Overview](docs/application-overview.md)
 - [⚙️ Project Configuration](docs/project-configuration.md)
