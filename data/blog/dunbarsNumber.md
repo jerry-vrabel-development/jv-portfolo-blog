@@ -1,7 +1,7 @@
 ---
 title: "Dunbar's Number"
 date: '2024-03-11'
-tags: ['Dunbar\'s Number', 'TIL', 'cognitive theory']
+tags: ['Dunbars Number', 'TIL', 'cognitive theory']
 draft: false
 summary: Proposed by anthropologist Robin Dunbar, Dunbar's Number is a theoretical cognitive limit to the number of people with whom an individual can maintain stable social relationships.
 ---
